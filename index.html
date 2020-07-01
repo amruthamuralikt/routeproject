@@ -1,32 +1,44 @@
 
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-	 <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<html>
+	<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-     <link rel="stylesheet" type="text/css" href="routestyle.css"> 
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+		<link rel="stylesheet" type="text/css" href="stylen.css">
+	</head>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-	   <script src="route.js"></script>
-    <title>Document</title>
-</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+<script src="route.js"></script>
+
 <body ng-app="app2">
-	<nav  class="navbar navbar-expand-sm navbar-dark  bg-dark fixed-top" style="height:65px;">
 
-	</nav>
+	<nav class="navbar navbar-expand-sm navbar-dark  bg-dark fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="#"><h3>WELCOME</h3></a>
+			<div class="collpase navbar-collapse">
+				<ul class="navbar-nav ml-auto">
+				
+					     
+					    <li class="nav-item">
+					      <a class="nav-link" href="#!home" class="btn btn-out">Home</a>
 
-	<div class="sidenav">
-	  <a href="#home">Home</a>
-	  <a href="#course">Courses</a>
-	  <a href="#student">Students</a>
-	  
-	</div>
-	
-	<div class=" main ng-view"> hello world...........</div>
+					    </li>
+					    
+					    <li class="nav-item">
+					     <a class="nav-link" href="#!course" class="btn btn-out">Courses</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#!about" class="btn btn-out">About</a>
+						   </li>
+					   </ul>
+		</div>
 </div>
+</nav><br><br><br>
 
-	</body>
-	</html> 
+
+
+
+<div class="ng-view"></div><br>
+
+</body>
+</html>
