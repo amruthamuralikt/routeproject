@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	 <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+     <link rel="stylesheet" type="text/css" href="css/routestyle.css"> 
+    <title>Document</title>
+</head>
+<body>
+	<nav  class="navbar navbar-expand-sm navbar-dark  bg-dark fixed-top" style="height:65px;">
+
+	</nav>
+
+	<div class="sidenav">
+	  <a href="#home">Home</a>
+	  <a href="#course">Courses</a>
+	  <a href="#student">Students</a>
+	  
+	</div>
+	
+	<div id="main">
+
+        
+        <div ng-view></div>
+
+	</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	   <script src="route.js"></script>
+	</body>
+	</html> 
