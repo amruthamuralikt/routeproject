@@ -1,15 +1,19 @@
 
 <!DOCTYPE html>
-<html lang="en" ng-app="app">
+<html lang="en" >
 <head>
 	 <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
      <link rel="stylesheet" type="text/css" href="routestyle.css"> 
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	   <script src="route.js"></script>
     <title>Document</title>
 </head>
-<body>
+<body ng-app="app2">
 	<nav  class="navbar navbar-expand-sm navbar-dark  bg-dark fixed-top" style="height:65px;">
 
 	</nav>
@@ -21,15 +25,8 @@
 	  
 	</div>
 	
-	<div id="main">
-
-        
-        <div ng-view></div>
-
-	</div>
+	<div id="main" class="ng-view"></div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-	   <script src="route.js"></script>
+
 	</body>
 	</html> 
