@@ -7,16 +7,12 @@
     <title>Document</title>
 </head>
 <body ng-app="app2">
-    <div ng-controller="courseCtrl">
-        <h2>HOME</h2>
+   <h2>courses offered</h2>
+       <ul ng-controller="courseCtrl">
+           <li ng-repeat="course in courses">
+               {{course}}</li>
+       </ul>
        
-        <ul>
-  <li ng-repeat="course in courses">
-      {{course}}
-  
-  </li>
-        </ul>
        
-      </div>
 </body>
 </html>
