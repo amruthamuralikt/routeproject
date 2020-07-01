@@ -1,20 +1,22 @@
 var app = angular.module("app2", ["ngRoute"]);
 app.config(function($routeProvider) {
     $routeProvider
-    .when("/home", {
-        templateUrl : "home.html",
-        controller :"homeCtrl"
-    })
     .when("/course", {
-        templateUrl : "course.html",
-        controller :"courseCtrl"
+        templateUrl : "templates/course.html",
+        controller:"courseCtrl"
+    })
+    .when("/about", {
+        templateUrl : "templates/about.html"
+       
+    })
+    .when("/home", {
+        templateUrl : "templates/home.html",
+        controller:"homeCtrl"
     });
-    
 });
-
-app.controller("homeCtrl", function ($scope) {
-    $scope.msg = "Home";
+    app.controller("homeCtrl",function($scope) {
+        $scope.message="Welcome to our world";
 });
-app.controller("courseCtrl", function ($scope) {
-    $scope.courses = ["PHP","AngularJS","javascript"];
+app.controller("courseCtrl",function($scope) {
+    $scope.courses=["php","AngularJS","Bootstrap"];
 });
